@@ -296,13 +296,13 @@ body {
     font-size: 15px;
     font-family: auto;
     border-bottom: 1px solid #ddd;
-    color: #757575!important
+    color: #757575!important;
 }
 
 .tour-sold {
     color: #fff!important;
     background-color: #f44336;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
 }
 
@@ -320,7 +320,40 @@ body {
     border-radius: 50%;
 }
 
-.tour-city {
+.city-row {
+    padding: 28px 0;
+}
+
+.city-row-data {
+    width: 32.9%;
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    color: black;
+}
+
+.city-row-data img {
+    width: 100%;
+    height: auto;
+}
+
+.city-detail {
+    padding: 10px 18px;
+}
+
+.btn-ticket {
+    background-color: #000;
+    color: white;
+    padding: 5px 10px;
+}
+
+.btn-ticket:hover {
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+}
+
+.contact {
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
@@ -328,18 +361,40 @@ body {
     max-width: 800px;
 }
 
-.city-row {
+.contact-row {
+    padding: 32px 0;
     width: 100%;
 }
 
-.city-row-data {
-    width: 32.5%;
+.contact-details {
+    text-align: left;
+    font-size: 18px;
+    width: 48%;
+    float: left;
+}
+
+.contact-details p {
+    margin: 10px;
+}
+
+.contact-half {
+    width: 100%;
+}
+
+
+/* .contact-half-first {
+    width: 47%;
     display: inline-block;
-    padding: 5px;
+    padding: 8px;
     text-align: left;
 }
 
-.city-row-data img {
-    width: 100%;
-    height: auto;
+.contact-half-second {
+    width: 47%;
+    display: inline-block;
+    padding: 8px;
 }
+
+.contact-half-msg {
+    width: 100%;
+} */
