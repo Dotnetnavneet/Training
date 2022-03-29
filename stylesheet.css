@@ -85,13 +85,13 @@ body {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-    background-color: #ccc;
+    background-color: #ccc !important;
     color: white;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #ccc;
+    background-color: #ccc !important;
     color: black;
 }
 
@@ -348,7 +348,7 @@ body {
 }
 
 .btn-ticket:hover {
-    background-color: white;
+    background-color: #ccc !important;
     padding: 5px 10px;
     color: black;
 }
@@ -377,24 +377,86 @@ body {
     margin: 10px;
 }
 
-.contact-half {
-    width: 100%;
-}
-
-
-/* .contact-half-first {
-    width: 47%;
+.contact-form {
+    width: auto;
     display: inline-block;
-    padding: 8px;
-    text-align: left;
 }
 
-.contact-half-second {
-    width: 47%;
+form {
+    display: block;
+    margin-top: 1em;
+}
+
+.register-first {
+    padding: 0 8px;
+    margin: 0 -16px 8px -16px;
+}
+
+.register-first-one {
+    width: auto;
+}
+
+.w3-input {
+    padding: 8px;
     display: inline-block;
-    padding: 8px;
+    width: auto;
+    border: 1px solid #ccc!important;
 }
 
-.contact-half-msg {
+.w3-input-msg {
+    padding: 8px;
+    display: block;
     width: 100%;
-} */
+    margin: 5px 0;
+    border: 1px solid #ccc!important;
+}
+
+.btn-msg {
+    float: right !important;
+    cursor: pointer;
+    width: auto;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 16px;
+    margin: 8px 0;
+}
+
+.btn-msg:hover {
+    color: #000;
+    background-color: #ccc !important;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+}
+
+.footer {
+    padding: 64px 16px;
+    font-size: 24px !important;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer-social i {
+    margin: 16px 0;
+    font-size: 24px !important;
+    color: black;
+}
+
+.footer-social i:hover {
+    opacity: 1.0;
+    color: #D2E1E6;
+}
+
+.footer p {
+    font-size: 15px;
+    color: black;
+    margin: 10px 0;
+}
+
+.link-company {
+    text-decoration: underline !important;
+    color: black;
+}
