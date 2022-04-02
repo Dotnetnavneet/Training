@@ -27,6 +27,33 @@ body {
     display: inline;
 }
 
+.nav-sidebar {
+    background-color: #000;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    animation: animationrightbtnopen 0.6s;
+}
+
+.nav-sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.nav-sidebar a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.sidebar-close {
+    padding: 16px;
+}
+
 .topnav {
     overflow: hidden;
     background-color: black;
@@ -42,8 +69,8 @@ body {
     font-size: 17px;
 }
 
-#search {
-    float: right;
+.search {
+    float: right !important;
 }
 
 .topnav .icon {
@@ -150,6 +177,9 @@ body {
     .col-s-12 {
         width: 100%;
     }
+    .contact-form {
+        display: inline;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -228,6 +258,14 @@ body {
     .team-column {
         width: 100%;
     }
+    .w3-half {
+        width: 100%;
+        margin: 3px 0;
+    }
+}
+
+.icon {
+    height: 50%;
 }
 
 .carousel-item img {
@@ -293,21 +331,6 @@ body {
     margin-bottom: 20px;
     width: 60%;
 }
-
-
-/* .team-column {
-    width: 31%;
-    display: inline-block;
-    margin: 15px 8px;
-    text-align: center;
-    padding: 0 8px;
-} */
-
-
-/* .team-column img {
-    width: 60%;
-    height: auto;
-} */
 
 .w3-third {
     text-align: center;
@@ -424,51 +447,19 @@ body {
     background-color: #000!important;
 }
 
-
-/* .city-row {
-    padding: 28px 0;
-}
-
-.city-row-data {
-    width: 32.9%;
-    display: inline-block;
-    text-align: left;
-    background-color: #fff;
-    color: black;
-}
-
-.city-row-data img {
-    width: 100%;
-    height: auto;
-}
-
-.city-detail {
-    padding: 10px 18px;
-}
-
-.btn-ticket {
-    background-color: #000;
-    color: white;
-    padding: 5px 10px;
-}
-
-.btn-ticket:hover {
-    background-color: #ccc !important;
-    padding: 5px 10px;
-    color: black;
-} */
-
 .contact {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 250px;
     padding: 64px 16px;
     text-align: center !important;
     max-width: 800px;
 }
 
 .contact-row {
-    padding: 32px 0;
-    width: 100%;
+    padding: 0 10px;
+    width: auto;
 }
 
 .contact-details {
@@ -479,12 +470,11 @@ body {
 }
 
 .contact-details p {
-    margin: 10px;
+    margin: 5px;
 }
 
 .contact-form {
-    width: auto;
-    display: inline-block;
+    display: inline;
 }
 
 form {
@@ -492,43 +482,24 @@ form {
     margin-top: 1em;
 }
 
-.register-first {
-    padding: 0 8px;
-    margin: 0 -16px 8px -16px;
-}
-
-.register-first-one {
-    width: auto;
-}
-
-.input {
-    padding: 8px;
-    display: inline-block;
-    width: auto;
-    border: 1px solid #ccc!important;
-}
-
-.input-msg {
-    padding: 8px;
-    display: block;
-    width: 100%;
-    margin: 5px 0;
-    border: 1px solid #ccc!important;
-}
-
-.btn-msg {
-    float: right !important;
-    cursor: pointer;
-    width: auto;
-    background-color: #000;
+.btn-contact {
     color: #fff;
-    padding: 6px 16px;
-    margin: 8px 0;
+    background-color: #000;
+    margin: 16px 0 !important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    float: right;
 }
 
-.btn-msg:hover {
-    color: #000;
-    background-color: #ccc !important;
+.btn-contact:hover {
+    text-align: center;
+    cursor: pointer;
+    color: #000!important;
+    background-color: #ccc!important;
 }
 
 .map img {
@@ -564,4 +535,118 @@ form {
 .link-company {
     text-decoration: underline !important;
     color: black;
+}
+
+.container-ticket {
+    padding: 30px;
+    margin: 10px;
+}
+
+.modal {
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    display: none;
+    /* Hidden by default */
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+#button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
