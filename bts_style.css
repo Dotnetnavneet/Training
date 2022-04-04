@@ -1,0 +1,52 @@
+.nav-link:hover {
+    color: black;
+    background-color: grey;
+}
+
+.btn:hover {
+    color: black;
+    background-color: lightblue;
+}
+
+.search {
+    float: right;
+    color: white;
+}
+
+.search:hover {
+    color: black;
+    background-color: grey;
+}
+
+.tour-sold {
+    color: #fff!important;
+    background-color: #f44336;
+    margin: 15px;
+    padding: 3px;
+}
+
+.badge {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 16px;
+}
+
+.badge-right {
+    float: right;
+    border-radius: 50%;
+}
+
+.tour-img {
+    width: 100%;
+}
+
+.tour-img:hover {
+    opacity: 0.6;
+}
+
+.btn-tour:hover {
+    color: white;
+}
