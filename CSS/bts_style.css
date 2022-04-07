@@ -141,7 +141,7 @@
                     display: none;
                 }
                 .icon {
-                    display: block;
+                    display: inline;
                 }
                 .nav-link {
                     padding: 5px;
@@ -247,7 +247,7 @@
             
             .close:hover,
             .close:focus {
-                color: red;
+                color: black;
                 cursor: pointer;
             }
             
@@ -332,4 +332,10 @@
             #footer i:hover {
                 opacity: 1.0;
                 color: #124C5F;
+            }
+            
+            .imgcontainer {
+                background-color: #0E613E;
+                height: 100%;
+                padding: 28px;
             }
