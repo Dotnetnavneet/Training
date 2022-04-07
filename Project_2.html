@@ -155,25 +155,25 @@
     </div>
     <div id="ticketModal" class="modal">
         <div class="w3-modal-content w3-animate-top w3-card-4">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('ticketModal').style.display='none'" class="close" title="Close Modal">x</span>
-                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-                </div>
+            <!-- <form class="modal-content animate" action="/action_page.php" method="post"> -->
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('ticketModal').style.display='none'" class="close" title="Close Modal">x</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+            </div>
 
-                <div class="container-ticket">
-                    <label><i class="fa fa-shopping-cart"></i>Tickets, $15 per person</label>
-                    <input type="text" placeholder="How many ?" required>
+            <div class="container-ticket">
+                <label><i class="fa fa-shopping-cart"></i>Tickets, $15 per person</label>
+                <input type="text" placeholder="How many ?" required>
 
-                    <label></label><i class="fa fa-user"></i> Send To</label>
-                    <input type="email" placeholder="Enter email" name="Send To" required>
+                <label></label><i class="fa fa-user"></i> Send To</label>
+                <input type="email" placeholder="Enter email" name="Send To" required>
 
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit">Pay<i class="fa fa-check"></i></button>
-                </div>
-                <div class="container-ticket" style="background-color:#f1f1f1">
-                    <button id="button" onclick="document.getElementById('ticketModal').style.display='none'" class="cancelbtn">Close <i class="fa fa-remove"></i></button>
-                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-                </div>
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit">Pay<i class="fa fa-check"></i></button>
+            </div>
+            <div class="container-ticket" style="background-color:#f1f1f1">
+                <button id="button" onclick="document.getElementById('ticketModal').style.display='none'" class="cancelbtn">Close <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
         </div>
     </div>
     <!-- contact-section -->
