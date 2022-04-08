@@ -291,7 +291,7 @@
             
             .contact-details {
                 text-align: left;
-                font-size: 18px;
+                font-size: 15px;
                 width: 48%;
                 float: left;
             }
@@ -338,4 +338,21 @@
                 background-color: #0E613E;
                 height: 100%;
                 padding: 28px;
+            }
+            
+            .formerror {
+                color: red;
+            }
+            
+            .open-button {
+                background-color: #555;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                opacity: 0.8;
+                position: fixed;
+                bottom: 23px;
+                right: 28px;
+                width: 280px;
             }
