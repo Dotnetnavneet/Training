@@ -98,15 +98,110 @@
 // console.log(CardinalDirections.North);
 // console.log(CardinalDirections.South);
 // string enum
-var CardinalDirections;
-(function (CardinalDirections) {
-    CardinalDirections[CardinalDirections["North"] = 0] = "North";
-    CardinalDirections[CardinalDirections["East"] = 1] = "East";
-    CardinalDirections["South"] = "south";
-    CardinalDirections["West"] = "west";
-})(CardinalDirections || (CardinalDirections = {}));
-;
-// logs "North"
-console.log(CardinalDirections.North);
-// logs "West"
-console.log(CardinalDirections.East);
+// enum CardinalDirections {
+//     North = 0,
+//     East,
+//     South = "south",
+//     West = "west"
+//   };
+//   // logs "North"
+//   console.log(CardinalDirections.North);
+//   // logs "West"
+//   console.log(CardinalDirections.East);
+// const graph: [number, number] = [55.2, 41.3];
+// const [x, y] = graph;
+// console.log([x, y]);
+// type CarYear = number
+// type CarType = string
+// type CarModel = string
+// type Car = {
+//   year: CarYear,
+//   type: CarType,
+//   model: CarModel
+// }
+// const carYear: CarYear = 2001
+// const carType: CarType = "Toyota"
+// const carModel: CarModel = "Corolla"
+// const car: Car = {
+//   year: carYear,
+//   type: carType,
+//   model: carModel
+// };
+// console.log(car);
+// Alias
+//   type CarYear = number
+//   type CarType = string
+//   type CarModel = string
+//   const CarYear = 2001
+//   const CarType = "Toyota"
+//   const CarModel = "Corolla"
+//   console.log(CarYear + CarType + CarModel);
+//interface
+// interface Square{
+//   length:number,
+//   breadth: number,
+// }
+// const square: Square =
+// {
+//   length:20,
+//   breadth:25
+// };
+// console.log(square);
+// interface
+// interface Square{
+//   length:number,
+//   breadth: number
+// }
+//  interface color extends Square{
+//    color:string
+//  }
+//  const Color : color = {
+//    length:10,
+//    breadth:10,
+//    color:"green"
+//  };
+//  console.log(Color);
+// function printStatusCode(code: string) {
+//   console.log(`${code.toUpperCase()}.`) 
+// }
+// printStatusCode('cgxhfdgjfj');
+//union
+// function printStatusCode(code: string|number) {
+//   console.log(`${code}.`) 
+// }
+// printStatusCode('cgxhfdgjfj');
+// printStatusCode(23);
+// function return type
+// function getTime(): number {
+//   return new Date().getTime();
+// }
+// console.log(getTime());
+//use of void doesn't return any value
+// function printHello(): void {
+//   console.log('Hello!');
+// }
+// printHello();
+// parameter
+// function multiply(a: number, b: number) {
+//   return a * b;
+// }
+// console.log(multiply(2,5))
+// optional parameter
+// function multiply(a: number, b: number, c?: number) {
+//   return a * b * (c || 0);
+// }
+// console.log(multiply(2,5,3))
+// default paramater
+// function pow(value: number=3, exponent: number = 2) {
+//   return value ** exponent;
+// }
+// console.log(pow());
+// function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
+//   return (dividend / divisor);
+// }
+// console.log(divide({dividend: 10, divisor: 2}));
+//Casting "as"
+// let x: any = 'hello';
+// console.log((x as string).length);
+var x = "helljhjhji";
+console.log(x.length);
