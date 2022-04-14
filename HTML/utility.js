@@ -1,4 +1,8 @@
 //Partial
+// interface Point {
+//   x: number;
+//   y: number;
+// }
 var pointPart = {
     x: 10,
     y: 10,
