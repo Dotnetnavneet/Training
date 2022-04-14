@@ -255,5 +255,115 @@
 // console.log((x as string).length);
 
 
-let x:any="helljhjhji";
-console.log((<string>x).length)
+// let x:any="helljhjhji";
+// console.log((<string>x).length)
+
+// classes example1
+
+// class Marks{
+//  subject:string;
+//  marks:number
+//     }
+//  const mark =new Marks();
+//  mark.subject= 'history';
+//  mark.marks= 87;
+// console.log(mark);
+
+// Classes example 2
+// class Marks{
+//   subject:string;
+//   marks:number
+//      }
+//   const mark =new Marks();
+//   mark.subject= 'history';
+//   mark.marks= 87;
+//  console.log(mark.subject);
+
+// classes example3
+//  class Person {
+//   name: string;
+//  }
+// const person = new Person();
+// person.name = "Jane";
+// console.log(person.name);
+
+// class example 4
+// class Person{
+//   name:string;
+//   age:number;
+//   group:string;
+//   constructor(name,age,group?){
+//     this.name=name;//this refer to current
+//     this.age=age;
+//   }
+// }
+// const person = new Person('abd',34);
+// console.log(person.name);
+// console.log(person.age);
+
+
+// class example 5
+// class Person{
+//   name:string;
+//   age:number;
+//   group:string;
+//   constructor(name,age,group){
+//     this.name=name;//this refer to current
+//     this.age=age;
+//     this.group=group;
+//   }
+// }
+// const person = new Person('abd',34,'A');
+// console.log(person.name);
+// console.log(person.age);
+// console.log(person.group);
+
+//class example 6 with modifier private and protected
+// class Person{
+//   private name:string;
+//   protected age:number;
+//     constructor(name,age){
+//     this.name=name;//this refer to current
+//     this.age=age;
+    
+//   }
+// }
+// const person = new Person('abd',34);
+// console.log(person.age);
+// console.log(person.name);
+
+//class modifier example 7
+// class Person{
+//       constructor(private name:string,private age:number){
+//         this.name=name;
+//         this.age=age;
+//                }
+//                  }
+      
+// const person = new Person('abd',34);
+// console.log(person.name);
+// console.log(person.age);
+
+//interface
+// let names=(firstname:string,lastname:string) =>{
+//   console.log(firstname);
+//   console.log(lastname);
+//   }
+//   names('a','b');
+  
+//interface2
+interface Shape {
+  getArea: () => number;
+}
+
+class Rectangle implements Shape {
+  public constructor(protected width: number, protected height: number) {}
+
+  public getArea(): number {
+    return this.width * this.height;
+  }
+}
+
+const myRect = new Rectangle(10,20);
+
+console.log(myRect.getArea());
