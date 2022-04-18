@@ -17,6 +17,7 @@
              
  let pointPart: Required<Point> = {
    x : 10,
+   
   y:10,
  z:10
  }; // `Partial` allows x and y to be optional
